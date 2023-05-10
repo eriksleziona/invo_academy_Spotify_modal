@@ -1,10 +1,10 @@
 /// Homepage Styles File
 /// Here we import all the Styles files we need for our Homepage.
-/// 
-/// 
+///
+///
 
-@use './components/user-feedback-component/user-feedback-component.scss';
-@use './components/user-feedback-modal/user-feedback-modal.scss';
+@use "./components/user-feedback-component/user-feedback-component.scss";
+@use "./components/user-feedback-modal/user-feedback-modal.scss";
 
 #home-page {
   height: 100%;
@@ -13,4 +13,5 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
