@@ -1,5 +1,10 @@
+import loader from "/assets/icons/animated-loader.svg";
+import icon from "/assets/icons/user-feedback-icon.svg";
 import Swal from "sweetalert2";
 const UserFeedbackComponent = () => {
+  document.querySelector(".user-feedback-component__icon-container-img").src =
+    icon;
+  document.querySelector(".btn-primary__loader-img").src = loader;
   let currentRating = null;
   const userFeedbackComponent = document.querySelector(
     ".user-feedback-component"

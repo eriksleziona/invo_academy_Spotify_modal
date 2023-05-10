@@ -1,4 +1,5 @@
 import Swal from "sweetalert2";
+import closeIcon from "/assets/icons/close-icon.svg";
 import UserFeedbackComponent from "../user-feedback-component/user-feedback-component";
 export const UserFeedbackModal = () => {
   let userFeedbackModalClosedTimestamp = localStorage.getItem(
@@ -36,7 +37,7 @@ export const UserFeedbackModal = () => {
     color: "var(--on-background-color)",
     showCloseButton: true,
     allowEnterKey: false,
-    closeButtonHtml: '<img src="/public/icons/close-icon.svg" alt="X" />',
+    closeButtonHtml: `<img src=${closeIcon} alt="X" />`,
     didClose: () => {
       localStorage.setItem("userFeedbackModalClosedTimestamp", Date.now());
     },
