@@ -1,3 +1,37 @@
 .user-feedback-modal {
-    
+  .swal2-html-container {
+    margin: 0;
+    position: initial;
+    text-align: initial;
+  }
+  .swal2-popup {
+    border-radius: 24px;
+    grid-row: 1;
+    margin-top: 105px;
+  }
+
+  .swal2-close {
+    --close-button-size: 15px;
+
+    width: var(--close-button-size);
+    height: var(--close-button-size);
+
+    margin-top: 28px;
+    margin-right: 28px;
+  }
+
+  @media (max-width: 992px) {
+    .swal2-popup {
+      margin-top: 334px;
+    }
+  }
+  @media (max-width: 500px) {
+    .swal2-container {
+      padding: 16px;
+      width: 394px;
+    }
+    .swal2-popup {
+      margin-top: -39px;
+    }
+  }
 }

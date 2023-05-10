@@ -14,9 +14,30 @@ button {
           }
         }
       }
+
       &:hover {
         cursor: not-allowed;
         background-color: var(--background-color-disabled);
+      }
+    }
+    div {
+      &.btn-primary {
+        &__loader {
+          display: none;
+          width: 22px;
+          height: 22px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  div[data-loading] {
+    &.btn-primary {
+      &__text {
+        display: none;
+      }
+      &__loader {
+        display: block;
       }
     }
   }

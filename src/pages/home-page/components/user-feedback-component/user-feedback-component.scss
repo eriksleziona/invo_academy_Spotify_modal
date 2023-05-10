@@ -30,6 +30,7 @@
     line-height: 100%;
     font-weight: 500;
     padding: 19px 32px;
+
     border: 1px solid var(--border-color);
     border-radius: var(--border-small-radius);
 
@@ -78,5 +79,32 @@
   }
   & &__confirm-button:active {
     background-color: var(--primary-color-pressed);
+  }
+
+  @media (max-width: 500px) {
+    padding: 16px;
+    & &__rates-container {
+      justify-content: space-evenly;
+    }
+    & &__single-rate-tile {
+      padding: 15px 23px 15px 23px;
+      font-size: 18px;
+      line-height: 100%;
+    }
+    & &__icon-container {
+      width: 40px;
+      height: 40px;
+    }
+    & &__title {
+      width: 200px;
+      font-size: 18px;
+    }
+    & &__single-label {
+      font-size: 12px;
+    }
+    & &__confirm-button {
+      padding: 17px 40px;
+      font-size: 14px;
+    }
   }
 }
