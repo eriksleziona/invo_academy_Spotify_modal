@@ -1,0 +1,13 @@
+button {
+  &.btn-primary {
+    &[disabled] {
+      background-color: var(--background-color-disabled);
+      color: var(--on-background-color-disabled);
+
+      &:hover {
+        cursor: not-allowed;
+        background-color: var(--background-color-disabled);
+      }
+    }
+  }
+}
