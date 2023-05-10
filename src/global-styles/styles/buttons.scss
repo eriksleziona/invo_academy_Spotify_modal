@@ -4,20 +4,19 @@ button {
     &[disabled] {
       background-color: var(--background-color-disabled);
       color: var(--on-background-color-disabled);
-
+      div {
+        &.btn-primary {
+          &__text {
+            color: var(--button-text-color);
+            font-size: 1rem;
+            line-height: 100%;
+            font-weight: 700;
+          }
+        }
+      }
       &:hover {
         cursor: not-allowed;
         background-color: var(--background-color-disabled);
-      }
-    }
-  }
-  div {
-    &.btn-primary {
-      &__text {
-        color: var(--button-text-color);
-        font-size: 1rem;
-        line-height: 100%;
-        font-weight: 700;
       }
     }
   }

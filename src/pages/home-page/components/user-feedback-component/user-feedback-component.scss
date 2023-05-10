@@ -8,6 +8,7 @@
   border-radius: var(--border-radius);
 
   & &__title {
+    width: 265px;
     margin-top: 16px;
     font-size: 24px;
     line-height: 100%;
@@ -31,6 +32,17 @@
     padding: 19px 32px;
     border: 1px solid var(--border-color);
     border-radius: var(--border-small-radius);
+
+    &[data-selected] {
+      border: 1px solid var(--primary-color);
+      background: linear-gradient(
+          0deg,
+          rgba(101, 212, 110, 0.08),
+          rgba(101, 212, 110, 0.08)
+        ),
+        var(--modal-background-color);
+      //background: var(--primary-color);
+    }
   }
 
   & &__labels-container {
@@ -43,6 +55,7 @@
     color: var(--label-color);
     width: 90px;
     font-size: 16px;
+    letter-spacing: -0.01em;
     font-weight: 500;
     line-height: 120%;
   }
@@ -55,6 +68,15 @@
     width: 100%;
     border-radius: var(--border-radius-button);
     border: none;
-    background-color: var(--button-background-color);
+    background-color: var(--primary-color);
+    color: var(--color-black-900);
+    font-weight: 700;
+    transition: all 0.2s;
+  }
+  & &__confirm-button:hover {
+    background-color: var(--primary-color-dark);
+  }
+  & &__confirm-button:active {
+    background-color: var(--primary-color-pressed);
   }
 }
